@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="907.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.kr.Controller">
+   <children>
+      <TableView fx:id="tableView" layoutX="274.0" layoutY="31.0" prefHeight="218.0" prefWidth="605.0">
+        <columns>
+          <TableColumn fx:id="eventIDColumn" prefWidth="130.0" text="eventID" />
+          <TableColumn fx:id="eventNameColumn" prefWidth="120.66665649414062" text="eventName" />
+            <TableColumn fx:id="priceColumn" prefWidth="125.3333740234375" text="price" />
+            <TableColumn fx:id="dateColumn" prefWidth="120.0" text="date" />
+            <TableColumn fx:id="artistColumn" prefWidth="107.33333333333337" text="artist" />
+        </columns>
+      </TableView>
+      <VBox layoutX="70.0" layoutY="31.0" prefHeight="200.0" prefWidth="156.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="eventID" />
+            <TextField fx:id="inputEventID" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="eventName" />
+            <TextField fx:id="inputEventName" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="price" />
+            <TextField fx:id="inputPrice" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="date" />
+            <TextField fx:id="inputDate" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="artist" />
+            <TextField fx:id="inputArtist" />
+         </children>
+      </VBox>
+      <Button layoutX="62.0" layoutY="261.0" mnemonicParsing="false" onAction="#addButton" prefHeight="31.0" prefWidth="171.0" text="ADD" />
+      <PieChart fx:id="pieChart" layoutX="62.0" layoutY="326.0" prefHeight="236.0" prefWidth="297.0" />
+      <Button layoutX="338.0" layoutY="261.0" mnemonicParsing="false" onAction="#deleteButton" prefHeight="31.0" prefWidth="469.0" text="Delete" />
+      <Button layoutX="473.0" layoutY="400.0" mnemonicParsing="false" onAction="#showButtonClick" text="Show diagram" />
+      <Button layoutX="473.0" layoutY="462.0" mnemonicParsing="false" onAction="#hideButtonClick" prefHeight="31.0" prefWidth="100.0" text="Hide diagram" />
+   </children>
+</AnchorPane>
